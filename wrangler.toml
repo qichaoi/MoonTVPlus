@@ -14,8 +14,8 @@ binding = "ASSETS"
 # D1 数据库绑定
 [[d1_databases]]
 binding = "DB"
-database_name = "qiliantv"
-database_id = "3f634a75-6717-4004-a31f-5a32fbd586c1"
+database_name = "qiliantvpro"
+database_id = "1a312f54-beb1-44ce-ad79-f433b783d49f"
 
 # 观影室的 Durable Object。
 # 单个 hub DO 装下所有房间：客户端是先建连、后 emit room:create/join，
