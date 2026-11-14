@@ -37,8 +37,12 @@ crons = ["0 1 * * *"]
 # cloudflare-deploy.yml 是用 `echo >> wrangler.toml` 追加环境变量的，
 # 追加的变量会落在文件末尾 —— 只有 [vars] 在最后它们才会进 [vars]。
 [vars]
-NODE_ENV = "production"
-BUILD_TARGET = "cloudflare"
-NEXT_PUBLIC_STORAGE_TYPE = "d1"
 # cron 路由等任务真正结束再返回（CF 上不需要 Vercel 那套"先返回 202 再后台跑"）
+ANNOUNCEMENT = "本站仅提供影视信息搜索服务，视频内容来自第三方平台。请注意识别视频中的赌博、投资、游戏代练等广告信息，这些都是第三方添加的，本站无法控制。请勿轻信，谨防受骗！再次强调！本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责！官方主站：https://qichao.pages.dev/"
+BUILD_TARGET = "cloudflare"
 CRON_WAIT_FOR_COMPLETION = "true"
+NEXT_PUBLIC_ENABLE_REGISTER = "true"
+NEXT_PUBLIC_STORAGE_TYPE = "d1"
+NODE_ENV = "production"
+SITE_NAME = "奇廉TV"
+USERNAME = "vip"
